@@ -8,19 +8,18 @@
 </head>
 <body>
     <script>
-     let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
-     for (let i = 1; i <= answer; i++) {
-        
-        if (i % 3 === 0) {
-            console.log("Fizz");
+        let answer = parseInt(prompt("Insert your number here"));
+        for (let i = 1; i <= answer; i++){
+            if (i % 3 === 0 && i % 5 === 0){ // checks if they both divided so it turns out fizzbuzz
+                console.log("FizzBuzz");
+            } else if (i % 3 === 0){ // checks if divded by 3, print fizz
+                console.log("Fizz");
+            } else if (i % 5 === 0){ // checks if divided by 5, prints buzz
+                console.log("Buzz");
+            } else {
+                console.log(i);
+            }
         }
-        else if (i % 5 === 0){
-            console.log("Buzz");
-        }
-        else {
-        console.log(i);
-        }
-     }
     </script>
 </body>
 </html>
